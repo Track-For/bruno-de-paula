@@ -6,21 +6,47 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "serve out -l tcp://127.0.0.1:4173 --no-clipboard",
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "16.4.2",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "@base-ui/react": "^1.9.0",
+    "@gsap/react": "^2.1.2",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.5.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.27",
+    "lucide-react": "^1.61.0",
+    "next": "^15.5.28",
+    "next-view-transitions": "^0.3.5",
+    "react": "19.1",
+    "react-dom": "19.1",
+    "shadcn": "^4.22.1",
+    "three": "^0.186.1",
+    "tw-animate-css": "^1.4.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.4.2",
+    "eslint-config-next": "^15.5.28",
+    "lighthouse": "^13.5.0",
+    "prettier": "^3.9.10",
+    "serve": "^14.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "postcss": "^8.5.31"
   }
 }
